@@ -1,0 +1,7 @@
+<p>parent-hook works!</p>
+
+<button (click)="toggleChild()">Toggle Child</button>
+
+<input type="text" [(ngModule)]="name">
+
+<app-child-hook *ngIf="isChild" [name]="name"></app-child-hook>

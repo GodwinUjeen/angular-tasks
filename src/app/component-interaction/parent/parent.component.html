@@ -1,0 +1,10 @@
+<div>
+    <h1>Parent Component</h1>
+    <input type="text" [(ngModel)]="nameInParent">
+    <span>
+        from child component: {{message}}
+    </span>
+</div>
+
+<!-- //Sending value from parent to child component -->
+<app-child [name]="nameInParent" (emitter)="receiveMessage($event)"></app-child>
